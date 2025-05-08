@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0e3; /* Un color de fondo suave */
+}
+
+header {
+    background-color: #d8bfd8; /* Color rosa palo para el encabezado */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.galeria-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea una cuadrícula adaptable */
+    gap: 20px;
+    max-width: 960px; /* Ancho máximo de la galería */
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #ffc0cb; /* Marco rosa palo */
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Indica que la imagen es interactiva */
+    transition: transform 0.3s ease-in-out; /* Animación suave al hacer hover */
+}
+
+.grid-galeria img:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+}
